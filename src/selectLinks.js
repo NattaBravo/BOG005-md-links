@@ -32,6 +32,9 @@ function getLinks(MDfileSet){
   })
 }; 
 getLinks(MDfileSet);
+
+
+
  /*
 
 function validarLink(arrayObjetos) {

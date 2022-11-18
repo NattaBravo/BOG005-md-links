@@ -3,5 +3,14 @@
   "version": "0.1.0",
   "engines": {
     "node": ">=14.x"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "har-validator": "^5.1.5",
+    "marked": "^4.2.2",
+    "pygmentize-bundled": "^1.2.0",
+    "uuid": "^7.0.3"
   }
 }
