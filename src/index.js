@@ -4,9 +4,9 @@ const { validateLink } = require("./validateLinks");
 const { readPath } = require("./viewPath");
 
 
-const routeUser = process.argv[2];
+//const routeUser = process.argv[2];
 
-let mdLinks = (path, options = { validate: true}) => {
+let mdLinks = (path, options = { validate: false}) => {
     return new Promise((resolve, reject) => {
         const validatePath = readPath(path);
         if (options.validate === true) {
@@ -20,7 +20,7 @@ let mdLinks = (path, options = { validate: true}) => {
         }
     })
 }
-mdLinks(routeUser).then(rest => (rest))
+//mdLinks(routeUser).then(rest => (rest))
 
 /*.catch(err => console.log("has cometido error", err));*/
 

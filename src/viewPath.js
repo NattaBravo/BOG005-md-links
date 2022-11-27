@@ -10,12 +10,12 @@ let readPath = (pathParam) => {
     let newPath;
     let arrayMDs = [];
 
-    if (pathParam == undefined || pathParam === "") {
+    /*if (pathParam == undefined || pathParam === "") {
     } else if (!Path.isAbsolute(pathParam)) {
         newPath = Path.resolve(pathParam);
-    } else {
+    } else {*/
         newPath = pathParam;
-    };
+    //};
 
     // Identificación del TIPO DE ELEMENTO que representa la ruta ¿Es un archivo? ¿Un directorio?
 
@@ -49,9 +49,9 @@ let readPath = (pathParam) => {
     return arrayMDs;
 }
 
-const MDfileSet = readPath(argsTerminal[2]);
+//const MDfileSet = readPath(argsTerminal[2]);
 
 module.exports = {
     readPath,
-    MDfileSet,
+    //MDfileSet,
 };

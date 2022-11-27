@@ -1,6 +1,8 @@
 {
-  "name": "md-links",
+  "name": "finding-links",
   "version": "0.1.0",
+  "description": "Identify, validate, and determine statistics for links within your Markdown files.",
+  "author": "nattabravo",
   "engines": {
     "node": ">=14.x"
   },

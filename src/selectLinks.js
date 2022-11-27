@@ -33,13 +33,13 @@ function fixArrayObjects(MDfileSet) {
     Promise.all(allLinks).then((res) => {
       resolve(res.flat());
       arrayPromises = (res.flat());
+      //console.log(arrayPromises)
       
     })
   })
 };
 
-const arrayObjects = fixArrayObjects(MDfileSet);
-
+//const arrayObjects = fixArrayObjects(MDfileSet);
 
 module.exports = {
   fixArrayObjects,

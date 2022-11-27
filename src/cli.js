@@ -10,12 +10,15 @@ const cliFunction = (route, options) =>{
         if(arg.includes('--validate')){
             (mdLinks(route, options = { validate: true })
             .then((res) => {console.log(res)}))
+
     } else if(arg.includes('--stats')){
         (mdLinks(route, (options = { validate: true }))
         .then((res) =>{console.table(statsOptions (res))}))
+
     } else if(arg.includes('--validates--stats') || arg.includes('--stats--validates')){
         (mdLinks(route, (options = { validate: true }))
         .then((res) =>{console.table(statsValidate(res))}))
+        
     } else if(arg!='--stats' || arg !='--validate' || arg == undefined){
         (mdLinks(route, options = { validate: false })
         .then((res) => {console.log(res)}))

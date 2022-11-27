@@ -33,7 +33,6 @@ function validateLink(arrayObjects) {
             object.status = res.status;
             object.mensaje = "ok";
             return object;
-  
         })
         .catch((err) => {
           object.status = 404;
@@ -42,8 +41,7 @@ function validateLink(arrayObjects) {
         });
     });
 
-    return  Promise.all(arrPromises).then(res=>res);
-    
+    return  Promise.all(arrPromises).then(res=>res); 
 };
     
 //validateLink(arrayObjects)
